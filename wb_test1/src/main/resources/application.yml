@@ -1,0 +1,20 @@
+server:
+  port: 10001
+
+rocketmq:
+  consumer:
+    groupName: g1 # 消费者的组名
+    namesrvAddr: 192.168.36.15:9876
+    topicName: topic_wb_01
+    tag:
+      - Tag1
+      - Tag2
+    key: wb@wb
+  producer:
+    groupName: g1 # 生产者的组名
+    namesrvAddr: 192.168.36.15:9876
+    topicName:  topic_wb_01
+    tag:
+      - Tag1
+      - Tag2
+    key: wb@wb
